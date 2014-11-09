@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5BCF9A30-34A1-4309-BCBC-50C8534D5E84}</ProjectGuid>
+    <AssemblyName>Cecil.Samples.Framework</AssemblyName>
+  </PropertyGroup>
+  <Import Project="..\Cecil.Samples.settings" />
+  <ItemGroup>
+    <Compile Include="ISample.cs" />
+    <Compile Include="ITarget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
