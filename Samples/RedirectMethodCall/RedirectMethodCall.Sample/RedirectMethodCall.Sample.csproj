@@ -4,7 +4,7 @@
     <ProjectGuid>{7C943D35-1F7C-4274-BC80-69605EE78C3D}</ProjectGuid>
     <AssemblyName>RedirectMethodCall.Sample</AssemblyName>
   </PropertyGroup>
-  <Import Project="..\..\..\Cecil.Samples.Sample.settings" />
+  <Import Project="..\..\..\Sample.settings" />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

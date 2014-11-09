@@ -4,7 +4,7 @@
     <ProjectGuid>{EBBDD33C-CDBA-4585-9461-BCE4561FDAC4}</ProjectGuid>
     <AssemblyName>AddAttributeToMethod.Target</AssemblyName>
   </PropertyGroup>
-  <Import Project="..\..\..\Cecil.Samples.Target.settings" />
+  <Import Project="..\..\..\Target.settings" />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Target.cs" />
