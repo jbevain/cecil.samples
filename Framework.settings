@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProjectReference Include="$(MSBuildThisFileDirectory)\Cecil.Samples.Framework\Cecil.Samples.Framework.csproj">
+      <Project>{5bcf9a30-34a1-4309-bcbc-50c8534d5e84}</Project>
+      <Name>Cecil.Samples.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

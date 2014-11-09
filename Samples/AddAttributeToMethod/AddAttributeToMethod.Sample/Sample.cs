@@ -7,23 +7,26 @@ namespace AddAttributeToMethod.Sample
 	public class Sample : ISample
 	{
 		private readonly string _targetFileName;
+		private readonly ModuleDefinition _module;
+
+		public ModuleDefinition TargetModule { get { return _module; } }
 
 		public Sample(string targetFileName)
 		{
 			_targetFileName = targetFileName;
+
+			// Read the module with default parameters
+			_module = ModuleDefinition.ReadModule(_targetFileName);
 		}
 
 		public void Run()
 		{
-			// Read the module with default parameters
-			var module = ModuleDefinition.ReadModule(_targetFileName);
-
 			// Retrieve the target method onto which we want to add the attribute
-			var targetType = module.Types.Single(t => t.Name == "Target");
+			var targetType = _module.Types.Single(t => t.Name == "Target");
 			var targetMethod = targetType.Methods.Single(m => m.Name == "TargetMethod");
 
 			// Retrieve the type of the attribute
-			var decorationAttributeType = module.Types.Single(t => t.Name == "DecorationAttribute");
+			var decorationAttributeType = _module.Types.Single(t => t.Name == "DecorationAttribute");
 
 			// Create the equivalent of [Decoration("WOW")]
 			// All custom attributes are created from a constructor
@@ -37,17 +40,14 @@ namespace AddAttributeToMethod.Sample
 
 			decorationAttribute.ConstructorArguments.Add(
 				new CustomAttributeArgument(
-					type: module.TypeSystem.String,
+					type: _module.TypeSystem.String,
 					value: "WOW"));
 
 			// Add the custom attribute to the method
 			targetMethod.CustomAttributes.Add(decorationAttribute);
 
-			// Mark the module for the samples runner
-			module.Types.Add(new TypeDefinition("", "IMarked", TypeAttributes.Interface | TypeAttributes.Abstract));
-
 			// Write the module with default parameters
-			module.Write(_targetFileName);
+			_module.Write(_targetFileName);
 		}
 	}
 }

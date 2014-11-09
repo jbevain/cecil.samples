@@ -5,6 +5,7 @@ using System.Reflection;
 using Cecil.Samples.Framework;
 using Mono.Cecil;
 using NUnit.Framework;
+using TypeAttributes = Mono.Cecil.TypeAttributes;
 
 #region Cheat
 using SampleFixtureAttribute = NUnit.Framework.TestFixtureAttribute;
@@ -53,6 +54,9 @@ namespace Cecil.Samples
 				Assert.IsNotNull(sampleType, "Could not find a sample type to run");
 
 				var sample = (ISample)Activator.CreateInstance(sampleType, targetAssemblyPath);
+
+				sample.TargetModule.Types.Add(
+					new TypeDefinition("", "IMarked", TypeAttributes.Interface | TypeAttributes.Abstract));
 
 				sample.Run();				
 			}

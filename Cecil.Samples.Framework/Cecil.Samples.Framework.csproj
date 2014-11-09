@@ -5,6 +5,7 @@
     <AssemblyName>Cecil.Samples.Framework</AssemblyName>
   </PropertyGroup>
   <Import Project="..\Cecil.Samples.settings" />
+  <Import Project="..\Cecil.settings" />
   <ItemGroup>
     <Compile Include="ISample.cs" />
     <Compile Include="ITarget.cs" />
