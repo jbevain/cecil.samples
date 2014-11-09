@@ -5,6 +5,7 @@ namespace AddAttributeToMethod.Target
 {
 	public class Target : ITarget
 	{
+		// This samples injects a [Decoration("WOW")] attribute here
 		public void TargetMethod()
 		{
 		}
