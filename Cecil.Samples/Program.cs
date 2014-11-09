@@ -8,13 +8,13 @@ using NUnit.Framework;
 using TypeAttributes = Mono.Cecil.TypeAttributes;
 
 #region Cheat
-using SampleFixtureAttribute = NUnit.Framework.TestFixtureAttribute;
+using SamplesAttribute = NUnit.Framework.TestFixtureAttribute;
 using SampleAttribute = NUnit.Framework.TestAttribute;
 #endregion
 
 namespace Cecil.Samples
 {
-	[SampleFixture]
+	[Samples]
 	public class SamplesDirectory
 	{
 		[Sample]
@@ -46,7 +46,7 @@ namespace Cecil.Samples
 				Assert.Fail("Could not find target named " + sampleName);
 
 			var targetModule = ModuleDefinition.ReadModule(targetAssemblyPath);
-			if (!targetModule.Types.Any(t => t.Name == "IMarked"))
+			if (!IsMarked(targetModule))
 			{
 				var sampleAssembly = Assembly.LoadFrom(sampleAssemblyPath);
 				var sampleType = sampleAssembly.GetTypes().FirstOrDefault(t => typeof(ISample).IsAssignableFrom(t));
@@ -69,6 +69,11 @@ namespace Cecil.Samples
 			var target = (ITarget) Activator.CreateInstance(targetType);
 
 			target.Run();
+		}
+
+		private static bool IsMarked(ModuleDefinition targetModule)
+		{
+			return targetModule.Types.Any(t => t.Name == "IMarked");
 		}
 	}
 }
