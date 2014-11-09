@@ -24,9 +24,9 @@ namespace Cecil.Samples
 		}
 
 		[Sample]
-		public void RedirectMethodCall()
+		public void ReplaceMethodCall()
 		{
-			RunSample("RedirectMethodCall");
+			RunSample("ReplaceMethodCall");
 		}
 
 		private void RunSample(string sampleName)

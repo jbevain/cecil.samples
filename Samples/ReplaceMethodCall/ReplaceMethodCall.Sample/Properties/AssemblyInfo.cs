@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("AddAttributeToMethod.Sample")]
+[assembly: AssemblyTitle("ReplaceMethodCall.Sample")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("c7efa1b6-a371-45bd-8d21-7f1d71621236")]
+[assembly: Guid("2130e0e2-75a0-4c70-b2d0-783dc482728b")]
 
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

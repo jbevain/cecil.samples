@@ -19,15 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cecil", "Cecil", "{5F431975
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddAttributeToMethod", "AddAttributeToMethod", "{2FDC4E9D-A8AD-471D-B278-BEEE5665187C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RedirectMethodCall", "RedirectMethodCall", "{D5DD216D-9745-49E6-BFBB-2AAA15A964A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReplaceMethodCall", "ReplaceMethodCall", "{D5DD216D-9745-49E6-BFBB-2AAA15A964A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAttributeToMethod.Sample", "Samples\AddAttributeToMethod\AddAttributeToMethod.Sample\AddAttributeToMethod.Sample.csproj", "{82230992-F90F-4FD8-9DF0-92A3196FF467}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAttributeToMethod.Target", "Samples\AddAttributeToMethod\AddAttributeToMethod.Target\AddAttributeToMethod.Target.csproj", "{EBBDD33C-CDBA-4585-9461-BCE4561FDAC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedirectMethodCall.Sample", "Samples\RedirectMethodCall\RedirectMethodCall.Sample\RedirectMethodCall.Sample.csproj", "{7C943D35-1F7C-4274-BC80-69605EE78C3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceMethodCall.Sample", "Samples\ReplaceMethodCall\ReplaceMethodCall.Sample\ReplaceMethodCall.Sample.csproj", "{7C943D35-1F7C-4274-BC80-69605EE78C3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedirectMethodCall.Target", "Samples\RedirectMethodCall\RedirectMethodCall.Target\RedirectMethodCall.Target.csproj", "{E607F595-1AC0-4B1F-9425-0104BE8AF0D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceMethodCall.Target", "Samples\ReplaceMethodCall\ReplaceMethodCall.Target\ReplaceMethodCall.Target.csproj", "{E607F595-1AC0-4B1F-9425-0104BE8AF0D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cecil.Samples.Framework", "Cecil.Samples.Framework\Cecil.Samples.Framework.csproj", "{5BCF9A30-34A1-4309-BCBC-50C8534D5E84}"
 EndProject
