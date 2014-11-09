@@ -1,7 +1,7 @@
 ﻿using Cecil.Samples.Framework;
 using NUnit.Framework;
 
-namespace RedirectMethodCall.Target
+namespace ReplaceMethodCall.Target
 {
 	public class Target : ITarget
 	{

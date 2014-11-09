@@ -3,7 +3,7 @@ using Cecil.Samples.Framework;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-namespace RedirectMethodCall.Sample
+namespace ReplaceMethodCall.Sample
 {
 	public class Sample : ISample
 	{
